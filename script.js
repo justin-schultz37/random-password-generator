@@ -28,15 +28,38 @@ function promptLength() {
 // This function creates a Yes/No option to allow special characters when generating a password
 function promptChar() {
   var scchoice = prompt('Would you like to include special characters? Type "Yes" or "No".');
-  var pwCharchoice = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-    'abcdefghijklmnopqrstuvwxyz0123456789';
+  var pwCharchoice = ' ';
 
-  if (scchoice == 'Yes') {
+  if (scchoice = 'Yes' || scchoice == 'yes') {
     pwCharchoice += '!%&*()"~?@#$';
     alert('Your password will include special characters.');
-    console.log(scchoice);
+
   } else {
     alert('Your password will NOT include special characters');
+  }
+  var scchoice = prompt('Would you like to include UPPERCASE letters? Type "Yes" or "No".');
+  if (scchoice == 'Yes' || scchoice == 'yes') {
+    pwCharchoice += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    alert('Your password will include UPPERCASE letters.');
+
+  } else {
+    alert('Your password will NOT include UPPERCASE letters');
+  }
+  var scchoice = prompt('Would you like to include lowercase letters? Type "Yes" or "No".');
+  if (scchoice == 'Yes' || scchoice == 'yes') {
+    pwCharchoice += 'abcdefghijklmnopqrstuvwxyz';
+    alert('Your password will include lowercase letters.');
+
+  } else {
+    alert('Your password will NOT include lowercase letters');
+  }
+  var scchoice = prompt('Would you like to include numbers? Type "Yes" or "No".');
+  if (scchoice == 'Yes' || scchoice == 'yes') {
+    pwCharchoice += '0123456789';
+    alert('Your password will include numbers.');
+
+  } else {
+    alert('Your password will NOT include numbers');
   }
 
   return pwCharchoice;
