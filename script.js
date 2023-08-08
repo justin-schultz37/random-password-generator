@@ -1,29 +1,46 @@
-// Assignment code here
+// This function returns a password based on random characters and a user-defined length
 function generatePassword() {
   var pass = '';
-  var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-    'abcdefghijklmnopqrstuvwxyz' + '0123456789@#$';
+  var pwChar = promptChar();
+  var pwLength = promptLength();
 
-  for (let i = 1; i <= promptLength; i++) {
-    var char = Math.floor(Math.random()
-      * str.length + 1);
-
-    pass += str.charAt(char)
+  for (let i = 1; i <= pwLength; i++) {
+    var char = Math.floor(Math.random() * pwChar.length);
+    pass += pwChar.charAt(char);
   }
 
   return pass;
 }
+// This function creates a prompt that allows user to choose a password length between 8 and 128 characters
 function promptLength() {
-  var pwlength = prompt('Please enter a number between 8 and 128 to set your password length: ');
+  var pwLength = prompt('Please enter a number in the range of 8 and 128 to set your password length: ');
 
-  if (pwlength >= 8 && pwlength <= 128) {
-    alert("Your chosen password length is " + pwlength + '.');
-    console.log(pwlength);
+  if (pwLength >= 8 && pwLength <= 128) {
+    alert("Your chosen password length is " + pwLength + '.');
+    console.log(pwLength);
   } else {
     alert('Please try again');
+    pwLength = promptLength();
   }
 
-  return pwlength;
+  return pwLength;
+}
+// This function creates a Yes/No option to allow special characters when generating a password
+function promptChar() {
+  var scchoice = prompt('Would you like to include special characters? Type "Yes" or "No".');
+  var pwCharchoice = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+    'abcdefghijklmnopqrstuvwxyz0123456789';
+
+  if (scchoice == 'Yes') {
+    pwCharchoice += '!%&*()"~?@#$';
+    alert('Your password will include special characters.');
+    console.log(scchoice);
+  } else {
+    alert('Your password will NOT include special characters');
+  }
+
+  return pwCharchoice;
+  console.log(pwCharchoice);
 }
 
 
@@ -40,4 +57,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", promptLength);
+generateBtn.addEventListener("click", writePassword);
