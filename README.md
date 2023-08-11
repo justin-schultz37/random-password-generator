@@ -1,4 +1,24 @@
-# random-password-generator
-A webpage that creates a random password based on user criteria
+# Random Password Generator
 
-resources https://www.geeksforgeeks.org/how-to-generate-a-random-password-using-javascript/ for the math function to generate random password
+Description 
+This application was built to offer the user the ability to generate a random password, while giving the ability to create this password by offer 4 preferences. These preferences are to include special characters, Uppercase, Lowercase, and numbers.
+![Article Preview](./Styles/assets/screenshot-127.0.0.1_5500-2023.08.10-17_58_39.png)
+
+Installation 
+N/A
+
+Usage 
+This application was built to offer the user the ability to generate a random password, while giving the ability to create this password by offer 4 preferences. These preferences are to include special characters, Uppercase, Lowercase, and numbers.
+
+Credits 
+https://www.geeksforgeeks.org/how-to-generate-a-random-password-using-javascript/ for the math function to generate random password
+
+License MIT License
+
+Copyright (c) 2023 justin-schultz37
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

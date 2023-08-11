@@ -30,7 +30,7 @@ function promptChar() {
   var scchoice = prompt('Would you like to include special characters? Type "Yes" or "No".');
   var pwCharchoice = ' ';
   // Prompts to ask if user wants special characters
-  if (scchoice = 'Yes' || scchoice == 'yes') {
+  if (scchoice == 'Yes' || scchoice == 'yes') {
     pwCharchoice += '!%&*()"~?@#$';
     alert('Your password will include special characters.');
 
@@ -68,7 +68,6 @@ function promptChar() {
   return pwCharchoice;
   console.log(pwCharchoice);
 }
-
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
