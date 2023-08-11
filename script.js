@@ -25,11 +25,11 @@ function promptLength() {
 
   return pwLength;
 }
-// This function creates a Yes/No option to allow special characters when generating a password
+// This function prompts for User input to determine if they prefer special characters, uppercase, lowercase, or numbers in the password generation
 function promptChar() {
   var scchoice = prompt('Would you like to include special characters? Type "Yes" or "No".');
   var pwCharchoice = ' ';
-
+  // Prompts to ask if user wants special characters
   if (scchoice = 'Yes' || scchoice == 'yes') {
     pwCharchoice += '!%&*()"~?@#$';
     alert('Your password will include special characters.');
@@ -38,6 +38,7 @@ function promptChar() {
     alert('Your password will NOT include special characters');
   }
   var scchoice = prompt('Would you like to include UPPERCASE letters? Type "Yes" or "No".');
+  // Prompts to ask if user wants to use UPPER case characters
   if (scchoice == 'Yes' || scchoice == 'yes') {
     pwCharchoice += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     alert('Your password will include UPPERCASE letters.');
@@ -46,6 +47,7 @@ function promptChar() {
     alert('Your password will NOT include UPPERCASE letters');
   }
   var scchoice = prompt('Would you like to include lowercase letters? Type "Yes" or "No".');
+  // Prompts to ask if user wants to include lower case letters
   if (scchoice == 'Yes' || scchoice == 'yes') {
     pwCharchoice += 'abcdefghijklmnopqrstuvwxyz';
     alert('Your password will include lowercase letters.');
@@ -54,6 +56,7 @@ function promptChar() {
     alert('Your password will NOT include lowercase letters');
   }
   var scchoice = prompt('Would you like to include numbers? Type "Yes" or "No".');
+  // Prompts to ask if user wants to include numbers
   if (scchoice == 'Yes' || scchoice == 'yes') {
     pwCharchoice += '0123456789';
     alert('Your password will include numbers.');
